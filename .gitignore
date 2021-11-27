@@ -1,2 +1,9 @@
-coupled-example/node_modules/
-coupled-example/build/
+coupled/node_modules/
+coupled/build/
+
+loosely-coupled/node_modules/
+loosely-coupled/build/
+
+
+typedi/node_modules/
+typedi/build/
