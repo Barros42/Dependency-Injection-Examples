@@ -1,14 +1,13 @@
-import GoodCamera from "./components/cameras/goodCamera"
-import MediumMemory from "./components/memories/mediumMemory"
-import LoudSpeaker from "./components/speakers/loudSpeaker"
+import NormalCamera from "./components/cameras/normalCamera"
+import SmallMemory from "./components/memories/smallMemory"
 import LowSpeaker from "./components/speakers/lowSpeaker"
 import SmallStorage from "./components/storages/smallStorage"
 import Smartphone from "./smartphone/smartphone"
 
 const storage = new SmallStorage()
-const memory = new MediumMemory()
-const camera = new GoodCamera()
-const speaker = new LoudSpeaker()
+const memory = new SmallMemory()
+const camera = new NormalCamera()
+const speaker = new LowSpeaker()
 
 console.clear()
 
