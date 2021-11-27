@@ -1,6 +1,6 @@
 import 'reflect-metadata'
-import Container, { Inject, Service } from 'typedi'
-import Bootstrap from './components/bootstrap'
+import Container from 'typedi'
+import Bootstrap from './bootstrap'
 import Smartphone from './smartphone/smartphone'
 
 Bootstrap.run()

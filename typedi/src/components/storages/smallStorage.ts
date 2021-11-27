@@ -1,7 +1,6 @@
 import 'reflect-metadata'
 import { Service } from 'typedi';
 import Component from '../component'
-import { IMemoryToken } from '../memories/iMemory';
 import IStorage from './iStorage';
 
 @Service()
