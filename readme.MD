@@ -1,14 +1,14 @@
 # Depedency Injection Examples
 
 ## 💻  Reason
-This repository was created to ilustrate concepts of DI on a talk in **DevPira Festival 2021**, the largest tech festival in countryside of São Paulo. 
+This repository was created as a part of Dependency Injection demonstration on a **DevPira Festival 2021** panel. Currently,  this is the largest tech festival in São Paulo area, Brazil.
 
 ## 📎 Examples
 There are three examples of how to develop the same software in this repo.
 
 The examples was written as an illusion to an smartphone factory, 
 
-- 📘The first one show how to develop tightly coupled software
+- 📘The first one show how to develop tightly coupled software ()
 - 📘The second one show how to develop loosely coupled software without frameworks 
 - 📘The third one show how to develop loosely coupled software with TypeDi a Typescript dependency injection library.
 
