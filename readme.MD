@@ -4,13 +4,13 @@
 This repository was created as a part of Dependency Injection demonstration on a **DevPira Festival 2021** panel. Currently,  this is the largest tech festival in São Paulo area, Brazil.
 
 ## 📎 Examples
-There are three examples of how to develop the same software in this repo.
+Here we'll have three examples showing how develop the same software in this repo.
 
-The examples was written as an illusion to an smartphone factory, 
+These examples were wroten as ilustration to an smartphone factory,
 
 - 📘The first one show how to develop tightly coupled software (please do not)
-- 📘The second one show how to develop loosely coupled software without frameworks 
-- 📘The third one show how to develop loosely coupled software with TypeDi a Typescript dependency injection library.
+- 📘The second shows how to develop loosely coupled software without frameworks
+- 📘 And lastely, the code shows how to develop loosely coupled software with TypeDi a Typescript dependency injection library.
 
 ## 🚀  Stack
 This project was developed with:
