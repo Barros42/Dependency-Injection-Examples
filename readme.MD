@@ -8,7 +8,7 @@ There are three examples of how to develop the same software in this repo.
 
 The examples was written as an illusion to an smartphone factory, 
 
-- 📘The first one show how to develop tightly coupled software ()
+- 📘The first one show how to develop tightly coupled software (please do not)
 - 📘The second one show how to develop loosely coupled software without frameworks 
 - 📘The third one show how to develop loosely coupled software with TypeDi a Typescript dependency injection library.
 
