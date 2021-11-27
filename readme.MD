@@ -1,7 +1,7 @@
 # Depedency Injection Examples
 
 ## 💻  Reason
-This repository was created to ilustrate concepts of DI on a talk in **DevPira Festival 2021**, the largest developer festival in countryside of São Paulo. 
+This repository was created to ilustrate concepts of DI on a talk in **DevPira Festival 2021**, the largest tech festival in countryside of São Paulo. 
 
 ## 📎 Examples
 There are three examples of how to develop the same software in this repo.
