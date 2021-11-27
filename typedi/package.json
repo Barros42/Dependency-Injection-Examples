@@ -1,5 +1,5 @@
 {
-  "name": "typescript-talk-loosely-coupled",
+  "name": "typedi-example",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Matheus de Barros <mdbf42@gmail.com>",
