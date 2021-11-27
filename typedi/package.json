@@ -1,0 +1,19 @@
+{
+  "name": "typescript-talk-loosely-coupled",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Matheus de Barros <mdbf42@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/index.js"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "typedi": "^0.10.0"
+  }
+}
