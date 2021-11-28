@@ -1,21 +1,9 @@
-import Component from "../component";
-import ICamera from "./iCamera";
+import BaseCamera from "./baseCamera";
 
-export default class AwesomeCamera extends Component implements ICamera {
-    
-    private readonly cameraQuality: string
+export default class AwesomeCamera extends BaseCamera {
 
     constructor() {
-        super('AWESOME_CAMERA')
-        this.cameraQuality = '50MP'
-    }
-
-    takePhoto(): void {
-        this.log('PHOTO TAKEN')
-    }
-    
-    getCameraInfo(): string {
-        return this.cameraQuality
+        super('AWESOME_CAMERA', '50MP')
     }
 
 }

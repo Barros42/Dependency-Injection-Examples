@@ -1,23 +1,11 @@
 import { Service } from 'typedi';
-import Component from '../component'
-import IStorage from './iStorage';
+import BaseStorage from './baseStorage';
 
 @Service()
-export default class LargeStorage extends Component implements IStorage {
+export default class LargeStorage extends BaseStorage {
 
-    private readonly storageSize: string
-    
     constructor() {
-        super('LARGE_STORAGE')
-        this.storageSize = '64GB'
-    }
-
-    getStorageCapacity(): string {
-        return this.storageSize
-    }
-
-    showStorageInfo(): void {
-        this.log(`STORAGE INFO: ${this.storageSize}`)
+        super('LARGE_STORAGE', '64GB')
     }
 
 }

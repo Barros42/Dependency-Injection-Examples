@@ -1,22 +1,13 @@
 import { Service } from "typedi";
-import Component from "../component";
-import ISpeaker, { ISpeakerToken } from "./iSpeaker";
+import BaseSpeaker from "./baseSpeaker";
+import { ISpeakerToken } from "./iSpeaker";
 
 @Service({ id: ISpeakerToken })
-export default class LoudSpeaker extends Component implements ISpeaker {
+export default class LoudSpeaker extends BaseSpeaker {
     
-    private readonly speakerPower: string
-
     constructor() {
-        super('LOUD_SPEAKER')
-        this.speakerPower = `110 dB`
+        super('LOUD_SPEAKER', '110 dB')
     }
 
-    playSound(): void {
-       this.log('SOUND PLAYED')
-    }
-    getSpeakerInfo(): string {
-       return this.speakerPower
-    }
-    
+   
 }

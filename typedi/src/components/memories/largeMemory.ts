@@ -1,22 +1,12 @@
 import { Service } from "typedi";
-import Component from "../component";
-import IMemory, { IMemoryToken } from "./iMemory";
+import BaseMemory from "./baseMemory";
+import { IMemoryToken } from "./iMemory";
 
 @Service({ id: IMemoryToken })
-export default class LargeMemory extends Component implements IMemory {
+export default class LargeMemory extends BaseMemory {
     
-    private readonly memoryCapacity: string
-
     constructor() {
-        super('LARGE_MEMORY')
-        this.memoryCapacity = `32GB`
+        super('LARGE_MEMORY', '32GB')
     }
-    getMemoryCapacity(): string {
-        return this.memoryCapacity
-    }
-
-    showMemoryInfo(): void {
-        this.log(`MEMORY INFO: ${this.memoryCapacity}`)
-    }
-    
+   
 }

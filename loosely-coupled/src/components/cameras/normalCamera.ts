@@ -1,21 +1,9 @@
-import Component from "../component";
-import ICamera from "./iCamera";
+import BaseCamera from "./baseCamera";
 
-export default class NormalCamera extends Component implements ICamera {
+export default class NormalCamera extends BaseCamera {
     
-    private readonly cameraQuality: string
-
     constructor() {
-        super('NORMAL_CAMERA')
-        this.cameraQuality = '8MP'
-    }
-
-    takePhoto(): void {
-        this.log('PHOTO TAKEN')
-    }
-    
-    getCameraInfo(): string {
-        return this.cameraQuality
+        super('NORMAL_CAMERA', '8MP')
     }
 
 }

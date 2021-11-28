@@ -1,21 +1,9 @@
-import Component from '../component'
-import IStorage from './iStorage';
+import BaseStorage from './baseStorage';
 
-export default class MediumStorage extends Component implements IStorage {
-
-    private readonly storageSize: string
+export default class MediumStorage extends BaseStorage{
 
     constructor() {
-        super('MEDIUM_STORAGE')
-        this.storageSize = '32GB'
-    }
-
-    getStorageCapacity(): string {
-        return this.storageSize
-    }
-
-    showStorageInfo(): void {
-        this.log(`STORAGE INFO: ${this.storageSize}`)
+        super('MEDIUM_STORAGE', '32GB')
     }
 
 }

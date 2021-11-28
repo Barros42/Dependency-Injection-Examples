@@ -1,20 +1,9 @@
-import Component from "../component";
-import ISpeaker from "./iSpeaker";
+import BaseSpeaker from "./baseSpeaker";
 
-export default class LowSpeaker extends Component implements ISpeaker {
+export default class LowSpeaker extends BaseSpeaker {
     
-    private readonly speakerPower: string
-
     constructor() {
-        super('LOW_SPEAKER')
-        this.speakerPower = `70 dB`
+        super('LOW_SPEAKER', '70 dB')
     }
 
-    playSound(): void {
-       this.log('SOUND PLAYED')
-    }
-    getSpeakerInfo(): string {
-       return this.speakerPower
-    }
-    
 }

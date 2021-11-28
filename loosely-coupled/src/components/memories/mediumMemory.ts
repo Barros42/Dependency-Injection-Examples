@@ -1,20 +1,9 @@
-import Component from "../component";
-import IMemory from "./iMemory";
+import BaseMemory from "./baseMemory";
 
-export default class MediumMemory extends Component implements IMemory {
+export default class MediumMemory extends BaseMemory {
     
-    private readonly memoryCapacity: string
-
     constructor() {
-        super('MEDIUM_MEMORY')
-        this.memoryCapacity = `16GB`
+        super('MEDIUM_MEMORY', '16GB')
     }
-    getMemoryCapacity(): string {
-        return this.memoryCapacity
-    }
-
-    showMemoryInfo(): void {
-        this.log(`MEMORY INFO: ${this.memoryCapacity}`)
-    }
-    
+       
 }

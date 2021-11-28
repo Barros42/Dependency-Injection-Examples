@@ -1,21 +1,9 @@
-import Component from '../component'
-import IStorage from './iStorage';
+import BaseStorage from './baseStorage';
 
-export default class SmallStorage extends Component implements IStorage {
-
-    private readonly storageSize: string
+export default class SmallStorage extends BaseStorage {
 
     constructor() {
-        super('SMALL_STORAGE')
-        this.storageSize = '16GB'
-    }
-
-    getStorageCapacity(): string {
-        return this.storageSize
-    }
-
-    showStorageInfo(): void {
-        this.log(`STORAGE INFO: ${this.storageSize}`)
+        super('SMALL_STORAGE', '16GB')
     }
 
 }
